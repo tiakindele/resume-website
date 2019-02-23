@@ -7,16 +7,30 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
     <!-------------------Header Section------------------->
     <section id="header">
-        <div class="container text-center">
-            <div class="portrait-box">
-                <img src="img/me.jpg">
-                <h1>Tolu Akindele</h1>
-                <p>Computing Science Major</p>
-                <p>Specialization in Software Practice</p>
+        <div class="bg-image"></div>
+        <div class="box">
+            <div class = row>
+                <div class = "col-md-6">
+                    <div class="portrait-box">
+                        <img src="img/me.jpg">
+                    </div>
+                </div>
+                <div class = "col-md-6">
+                    <div class="text">
+                        <!-- <div class="css-typing"> -->
+                            <p>Tolu Akindele</p>
+                            <p>Computing Science Major</p>
+                            <p>Software Practice Spec.</p>
+                        <!-- </div> -->
+                    </div>
+                </div>
             </div>
         </div>
         <div class="scroll-btn">
@@ -28,12 +42,13 @@
 
     <!-------------------My Info Section------------------->
     <section id="user-info">
-
         <div class="nav-bar">
             <nav class="navbar navbar-expand-lg">
                 <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                <a class="navbar-brand" href="#">TA</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                    <i class = "fa fa-bars"></i>
+                <!-- <span class="navbar-toggler-icon"></span> -->
                 </button>
                 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -42,38 +57,241 @@
                     <a class="nav-link" href="#">HOME</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">ABOUT ME</a>
+                    <a class="nav-link" href="#about">ABOUT ME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">PROJECTS</a>
+                        <a class="nav-link" href="#projects">PROJECTS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">RESUME</a>
+                        <a class="nav-link" href="#resume">RESUME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">EDUCATION</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT ME</a>
+                        <a class="nav-link" href="#contact">CONTACT</a>
                     </li>
                 </ul>
                 </div>
             </nav>
         </div>
-
+        
         <!-------------------About Me------------------->
         <div class="about container" id="about">
+            <h1>About Me</h1>
             <div class="row">
                 <div class="col-md-6 text-center">
                     <img src="img/me-big.jpg" class="profile-img">
                 </div>
                 <div class="col-md-6">
-                    <h3>MEET TOLU</h3>
+                    <!-- <h3>ABOUT ME</h3> -->
                     <p>
-                        Dwelling and speedily ignorant any steepest. Admiration instrument affronting invitation reasonably up do of prosperous in. Shy saw declared age debating ecstatic man. Call in so want pure rank am dear were. Remarkably to continuing in surrounded diminution on. In unfeeling existence objection immediate repulsive on he in. Imprudence comparison uncommonly me he difficulty diminution resolution. Likewise proposal differed scarcely dwelling as on raillery. September few dependent extremity own continued and ten prevailed attending. Early to weeks we could. 
+                        I am currently a student at the University of Alberta pursuing a degree in Computing Science with Specialization in Software Practice, and a minor in Business. <br><br> I became interested in  Computing Science because how influential it was in my native country, Nigeria. Experiencing its positive impacts first-hand, and getting a chance to pursue the passion in Canada, fueled my love for Computing Science. I love discussing IoT innovations and unanticipated consequences of new technologies. <br><br> In my spare time, I am a Music Producer and Sound Engineer. I enjoy producing music for the same reason I enjoy building websites and mobile applications - I love bringing ideas to life.
                     </p>
+                    <h5>TRANSFERABLE SKILLS</h5>
+                    <ul style="list-style-type:disc">
+                        <li>Fast learner - able to pick up skills quickly.</li>
+                        <li>Extremely organized and attentive to details.</li>
+                        <li>Strong communication, teamwork, and interpersonal skills.</li>
+                        <li>Able to balance and prioritize multiple tasks to meet project deadlines.</li>
+                    </ul>
                 </div>
             </div>
+        </div>
+        
+        <!-------------------Projects------------------->
+        <hr id="projects" class="pages">
+        <div class="projects container">
+            <h1>Projects</h1>
+            <div class="row">
+                <div class="col-md text-center">
+                    <div class="tabbed">
+                        <input type="radio" name="tabs" id="tab-nav-1" checked>
+                        <label for="tab-nav-1">Routine Keen</label>
+                        <input type="radio" name="tabs" id="tab-nav-2">
+                        <label for="tab-nav-2">Gas Station Record System</label>
+                        <input type="radio" name="tabs" id="tab-nav-3">
+                        <label for="tab-nav-3">This Website</label>
+                        <input type="radio" name="tabs" id="tab-nav-4">
+                        <label for="tab-nav-4">Others</label>
+                        <div class="tabs">
+                            <div>
+                                <h3>Routine Keen</h3>
+                                <p>Fitness App for Android Devices</p>
+                                <div class="tabdetails">
+                                    <b>Description</b>
+                                    <p>This app helps you keep track of physical activities you get involved in and is intended to help you make a habit out of it. <a href="https://github.com/CMPUT301F17T23/routineKeen/wiki/User-Stories" class="link">Click here for user stories.</a></p>
+                                    <b>Languages and Softwares Used</b>
+                                    <ul style="list-style-type:disc">
+                                        <li>Java</li>
+                                        <li>Android Studio</li>
+                                    </ul>
+                                    <b>Main Lessons/Achievements</b>
+                                    <ul style="list-style-type:disc">
+                                        <li>User login</li>
+                                        <li>Handling offline data</li>
+                                        <li>Database management of user data</li>
+                                        <li>Geolocation (google maps) monitoring</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <h3>Gas Station Record System</h3>
+                                <p>Transaction WebApp using Angular Forms</p>
+                                <div class="tabdetails">
+                                    <b>Description</b>
+                                    <p>Front end development of transaction interface for gas station employees.</p>
+                                    <b>Languages and Softwares Used</b>
+                                    <ul style="list-style-type:disc">
+                                        <li>VS Code</li>
+                                        <li>HTML & CSS</li>
+                                        <li>Angular JS</li>
+                                    </ul>
+                                    <b>Main Lessons/Achievements</b>
+                                    <ul style="list-style-type:disc">
+                                        <li>Data validation of user input</li>
+                                        <li>Capturing sales transactions and daily sales data</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <h3>This Website</h3>
+                                <p>My Personal Self-made Website</p>
+                                <div class="tabdetails">
+                                    <b>Description</b>
+                                    <p>My personal website was created to showcase my projects and experience. This website was a personal endeavour and the skills used were self-taught.</p>
+                                    <b>Languages and Softwares Used</b>
+                                    <ul style="list-style-type:disc">
+                                        <li>VS Code</li>
+                                        <li>HTML & CSS</li>
+                                    </ul>
+                                    <b>Main Lessons/Achievements</b>
+                                    <ul style="list-style-type:disc">
+                                        <li>Publishing a website</li>
+                                        <li>Taking concept from idea to reality</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <h3>Others</h3>
+                                <div class="tabdetails">
+                                    <ul style="list-style-type:disc">
+                                        <br>
+                                        <li><a href="https://github.com/tiakindele?tab=repositories" class="link">Click here</a> to see other projects available on my GitHub account. <br><br></li>
+                                        <li>I love using <b>GitHub</b> to keep all my code up to date.<br><br></li>
+                                        <li>When working on projects with a team, <b>Slack</b> and <b>Trello</b> are my go-tos.<br><br></li>
+                                        <li>I have worked on projects using <b>C</b>, <b>Python</b>, <b>Java</b>, <b>SQL</b>, <b>HTML</b> and <b>CSS</b>.<br><br></li>
+                                        <li>My favourite code editors in no particular order are <b>VS Code</b>, <b>Sublime Text</b>, and <b>PyCharm</b>.<br><br></li>
+                                        <li>My main OS at the moment is the <b>Mac OS</b>, but I do a lot of work on <b>Windows</b> and <b>Linux</b> also.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.6/prefixfree.min.js"></script> -->
+        
+        <!-------------------Resume------------------->
+        <hr id="resume" class="pages">
+        <div class="resume">
+            <div class="container">
+                <div class="row">
+                    <div class="container text-center">
+                        <h1>Résumé</h1>
+                        <a href="pdf/TA Official Resume.pdf" target="_blank" class="link"><p class="text-center">Click here to view my full resume PDF</p></a>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="text-center">My Experiences</h3>
+                        <ul class="timeline">
+                            <li>
+                                <h5><span>Child Educator and Site Supervisor</span></h5>
+                                <p>
+                                    I have worked with YMCA, City of Surrey, EPSB (Edmonton Public Schools Board) and several organizations for low-income and immigrant families<br>
+                                    <b>Skills Involved:</b> Leadership <b>|</b> Teamwork <b>|</b> Reliability<br>
+                                    <b>Duration: </b> 2015 - Present<br>
+                                </p>
+                            </li>
+                            <li>
+                                <h5><span>Sound Engineer</span></h5>
+                                <p>
+                                    I have worked with <a href="https://yegmusicofficial.com/" class="link">YEGMusic</a>, <a href="https://www.newlabelproduction.com/" class="link">New Label Productions</a>, <a href="https://www.facebook.com/ExpozedYEG/" class="link">ExposedYEG</a> and several artists across North America.<br>
+                                    <b>Skills Involved:</b> Networking <b>|</b> Time management <b>|</b> Self-motivation <b>|</b> Reliability <b>|</b> High efficiency and organization
+                                    <br>
+                                    <b>Duration: </b> 2017 - Present<br>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h3 class="text-center">My Education</h3>
+                        <ul class="timeline">
+                            <li>
+                                <h5><span>University of Alberta</span></h5>
+                                <p>
+                                    BSc. Computing Science Major<br>
+                                    <b>Specialization:</b> Software Practice<br>
+                                    <b>Minor:</b> Business<br>
+                                    <b>Session:</b> Sept 2014 - Present <br>
+                                    <b>Location:</b> Edmonton, AB <br>
+                                </p>
+                            </li>
+                            <li>
+                                <h5><span>Pacific Academy</span></h5>
+                                <p>
+                                    IB Diploma Programme<br>
+                                    <b>Level: </b> High School <br>
+                                    <b>Duration:</b> Sept 2010 - Aug 2014 <br>
+                                    <b>Location:</b> Surrey, BC <br>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-------------------Contact------------------->
+        <hr id="contact" class="contact">
+        <div class="contact">
+            <div class="container text-center">
+                <h1>Contact</h1>
+                <p class="text-center">Feel free to reach out to me at anytime.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                    <div class ="row">
+                        <div class="col-md-4 col-lg-3"></div>
+                        <div class="col-md-4 col-lg-6">
+                            <i class="fa fa-envelope"></i>
+                            <p class="text-center">toluwani@ualberta.ca</p>
+                        </div>
+                        <div class="col-md-4 col-lg-4"></div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <h4>Around the Web</h4>
+                    <div class ="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-2">
+                            <a href="https://github.com/tiakindele" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="https://www.linkedin.com/in/tolu-akindele-966649171/" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="pdf/TA Official Resume.pdf" class="btn-social btn-outline"><i class="fa fa-fw fa-file-pdf-o"></i></a>
+                        </div>
+                        <div class="col-md-3"></div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+
+        <div class="footer text-center">
+            <p>Copyright &copy; Tolu Akindele 2019</p>
         </div>
     </section>
 </body>
