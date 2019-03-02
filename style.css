@@ -1,4 +1,4 @@
-:root {
+:root{
     --bg: #c9dad8;
     /* --header-bg: #7a4938; */
     --nav-bg: #000000;
@@ -13,8 +13,7 @@
 }
 
 /* -------------------body------------------- */
-body
-{
+body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -22,7 +21,7 @@ body
     font-size: 18px !important;
     background-color: var(--bg) !important;
 }
-hr.pages { 
+hr.pages{ 
     display: block;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
@@ -31,72 +30,54 @@ hr.pages {
     border-style: inset;
     border-width: 1px;
 }
-hr.contact { 
+hr.contact{ 
     display: block;
     margin-top: 0.0em;
     margin-bottom: 0.0em;
 }
 /* -------------------Header CSS------------------- */
-.bg-image
-{
+.bg-image{
     background-image: url("img/bg.jpeg");
-    filter: blur(5px);
-    -webkit-filter: blur(5px);
+    filter: blur(7px);
+    -webkit-filter: blur(7px);
     height: 100vh;
     text-align: center;
-    /* background-color: var(--header-bg); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed; 
+    background-attachment: fixed;
 }
-/* Position text in the middle of the page/image */
-.box {
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border: 1px solid #f1f1f1;
+.container#pb {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    /* height: 450px; */
-    /* max-width: 600px; */
-    /* width: auto; */
-    max-width: 60vw;
-    padding: 20px;
+    min-width: 100vw;
+    height: auto;
+    margin: 20px 0;
+    padding: 10px;
     text-align: center;
+    top: 20%;
 }
-.box portrait-box
-{
-    top: 25%;
-    left: 10%;
-    right: 10%;
-    transform: translate (-50%, -50%);
-    position: absolute;
-}
-.portrait-box img
-{
+.portrait-box img{
+    height: 50%;
+    width: 50%;
     border-radius: 50%;
-    max-width: 250px;
-    border: 2px solid #86868527;
-    margin-top: 10px;
+    max-width: 290px;
+    border: 1px solid #86868527;
+    /* margin-top: 10px; */
     margin-bottom: 10px;
 }
-.text
-{
-    margin: 0;
-    position: relative;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    text-align: left !important;
+.text{
+    margin-top: 1%;
+    color: var(--header-text-color);
+    font-size: 35px;
+    line-height: 0%;
+    text-shadow: 2px 1px 8px #000000;
 }
-.scroll-btn
-{
+.text #hello{
+    font-size: 20px !important;
+    color: var(--header-text-color);
+    line-height: 100%;
+}
+.scroll-btn{
     bottom: 30px;
     position: absolute;
     left: 50%;
@@ -106,127 +87,103 @@ hr.contact {
     padding: 10px 10px 20px;
     border-radius: 30px;
 }
-.scroll-bar span
-{
+.scroll-bar span{
     /* border: 2px solid rgb(59, 59, 59); */
     border: 2px solid var(--header-text-color);
     font-size: 10px;
     border-radius: 30px;
 }
-.scroll-bar
-{
+.scroll-bar{
     animation: mover 1s infinite alternate;
 }
-@keyframes mover
-{
+@keyframes mover{
     0%{transform: translateY(0);}
     100%{transform: translateY(10px);}
 }
 /* -------------------About------------------- */
-.about
-{
+.about{
     padding-top: 75px;
     min-height: auto;
     color: var(--text-color);
-	/* height: auto; */
 }
-.about h1
-{
+.about h1{
     padding-bottom: 15px;
     text-align: center;
 }
-.profile-img
-{
+.profile-img{
     margin-top: 1vh;
     height: 400px;
 }
-.col-md-6 .profile-img
-{
+.col-md-6 .profile-img{
     max-width: 1000px;
     /* border: 2px solid #86868527; */
     border: 2px solid var(--shape-color);
 }
-.about .col-md-6
-{
+.about .col-md-6{
     padding-bottom: 10px;
 }
-.br
-{
+.br{
     line-height: 50%;
 }
-.nav-bar
-{
+.nav-bar{
     top: 0;
     position: sticky;
     z-index: 2;
 }
-.navbar
-{
+.navbar{
     background-color: var(--nav-bg);
 }
-.navbar-brand
-{
+.navbar-brand{
     margin-left: 2%;
     color: var(--header-text-color);
 }
-.nav-bar .fa-bars
-{
+.nav-bar .fa-bars{
     font-size: 35px;
     color: var(--header-text-color);
 }
-.navbar-toggler
-{
+.navbar-toggler{
     outline: none !important;
 }
-.navbar-nav
-{
+.navbar-nav{
     float: right;
     text-align: right;
 }
-.nav-link
-{
+.nav-link{
     color: var(--header-text-color) !important;
 }
 /* -------------------Projects------------------- */
-.projects
-{
+.projects{
     padding-top: 75px;
     min-height: 700px;
     /* min-height: 100vh; */
     color: var(--text-color);
 }
-.projects h1
-{
+.projects h1{
     padding-bottom: 15px;
     text-align: center;
 }
-.projects .link
-{
+.projects .link{
     color: var(--link-color);
 }
-.projects .link:hover
-{
+.projects .link:hover{
     color: var(--link-hover);
 }
 /* https://codepen.io/YozhEzhi/pen/gcLpI/ */
 @import "compass/css3";
-* {
+*{
     box-sizing: border-box;
 }
-::selection {background-color: var(--select-color);}
-.tabbed
-{
+::selection{background-color: var(--select-color);}
+.tabbed{
     width: 930px;
     margin: 0px auto;
     position: relative;
 }
-.tabbed h3
-{
+.tabbed h3{
     padding-bottom: 0px;
 }
-.tabbed > input {display: none;}
-.tabbed > label 
-{
+.tabbed > input{display: none;}
+.tabbed > label {
     display: block;
     float: left;
     padding: 12px 20px;
@@ -234,19 +191,16 @@ hr.contact {
     cursor: pointer;
     transition: background-color .3s;
 }
-.tabbed > label:hover {background: var(--link-hover);}
-.tabbed > input:checked + label 
-{
+.tabbed > label:hover{background: var(--link-hover);}
+.tabbed > input:checked + label {
     color: var(--shape-text-color);
     background: var(--shape-color);
 }
-.tabs 
-{
+.tabs {
     clear: both;
     perspective: 600px;
 }
-.tabs > div 
-{
+.tabs > div {
     width: 930px;
     position: fixed;
     border: 2px solid var(--shape-color);
@@ -261,21 +215,19 @@ hr.contact {
 #tab-nav-1:checked ~ .tabs > div:nth-of-type(1),
 #tab-nav-2:checked ~ .tabs > div:nth-of-type(2),
 #tab-nav-3:checked ~ .tabs > div:nth-of-type(3),
-#tab-nav-4:checked ~ .tabs > div:nth-of-type(4)
-{
+#tab-nav-4:checked ~ .tabs > div:nth-of-type(4){
     transform: rotateX(0);
     opacity: 1;
     z-index: 1;
 }
-@media screen and (max-width: 1000px) 
-{
+@media screen and (max-width: 1000px) {
     .tabbed 
-    { 
+   { 
         width: 400px;
     }
-    .tabbed > label { display: none }
+    .tabbed > label{ display: none }
     .tabs > div
-    {
+   {
         width: 400px;
         border: none;
         padding: 0;
@@ -285,40 +237,34 @@ hr.contact {
         margin-bottom: 60px;
     }
     .tabs > div h3 
-    {
+   {
         border-bottom: 2px solid #000000;
         padding-bottom: .5em;
     }
 }
-.tabdetails
-{
+.tabdetails{
     text-align: left;
 }
 
 /* -------------------Resume------------------- */
-.resume
-{
+.resume{
     padding-top: 75px;
     padding-bottom: 75px;
     /* min-height: 100vh; */
     min-height: auto;
     color: var(--text-color);
 }
-.resume .link
-{
+.resume .link{
     color: var(--link-color);
 }
-.resume .link:hover
-{
+.resume .link:hover{
     color: var(--link-hover);
 }
-.timeline
-{
+.timeline{
     list-style-type: none;
     position: relative;
 }
-.timeline:before
-{
+.timeline:before{
     content: '';
     background: var(--shape-color);
     display: inline-block;
@@ -328,35 +274,30 @@ hr.contact {
     height: 100%;
     z-index: 1;
 }
-.timeline li
-{
+.timeline li{
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
 }
-.timeline li h5
-{
+.timeline li h5{
     background-color: var(--shape-color);
     padding: 5px 0 5px 12px;
     /* color: #fff; */
     color: var(--text-color);
     font-size: 15px; 
 }
-.timeline li h5 span
-{
+.timeline li h5 span{
     font-weight: bold;
     /* color: white; */
     color: var(--bg);
     /* margin-left: 0.5px; */
 }
-.timeline li p
-{
+.timeline li p{
     /* color: black; */
     color: var(--text-color);
     margin-left: 15px;
 }
-.timeline li:before
-{
+.timeline li:before{
     content: '';
     background: var(--bg);
     display: inline-block;
@@ -370,8 +311,7 @@ hr.contact {
 }
 
 /* -------------------Contact------------------- */
-.contact
-{
+.contact{
     padding-top: 0px;
     padding-bottom: 50px;
     background-color: var(--contact-bg);
@@ -381,31 +321,25 @@ hr.contact {
     background-attachment: fixed; 
     color: var(--text-color);
 }
-.contact .text-center
-{
+.contact .text-center{
     padding-bottom: 10px;
 }
-.contact .row
-{
+.contact .row{
     font-size: 20px;
 }
-.contact .col-md-5 .fa
-{
+.contact .col-md-5 .fa{
     padding: 10px;
     font-size: 40px;
 }
-.contact .btn-social
-{
+.contact .btn-social{
     color: var(--link-color);
 }
-.contact .btn-social:hover
-{
+.contact .btn-social:hover{
     color: var(--link-hover);
 }
 
 /* -------------------Footer------------------- */
-.footer
-{
+.footer{
     background-color: var(--nav-bg);
     height: 60px;
     color: var(--header-text-color);
