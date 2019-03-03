@@ -1,17 +1,27 @@
-:root{
-    --bg: #c9dad8;
-    /* --header-bg: #7a4938; */
-    --nav-bg: #000000;
-    --contact-bg: #e9ccc3;
-    --text-color: #0e0e0e;
+/* :root{
+    --bg: rgb(255, 255, 255);
+    --nav-bg: rgb(92, 128, 138);
+    --contact-bg: #d3d2a2;
+    --text-color: #282524;
     --header-text-color:white;
-    --link-color: #639A67;
-    --link-hover: #205D67;
+    --link-color: rgb(92, 128, 138);
+    --link-hover: rgb(127, 174, 187);
     --select-color: rgba(124, 150, 199, 0.363);
-    --shape-color: #7a4938;
+    --shape-color: #92a76bda;
+    --shape-text-color: #c9dad8;
+} */
+:root{
+    --bg: rgb(255, 255, 255);
+    --nav-bg: rgb(92, 128, 138);
+    --contact-bg: rgb(210, 225, 230);
+    --text-color: #282524;
+    --header-text-color:white;
+    --link-color: rgb(92, 128, 138);
+    --link-hover: rgb(127, 174, 187);
+    --select-color: rgba(124, 150, 199, 0.363);
+    --shape-color: rgb(92, 128, 138);
     --shape-text-color: #c9dad8;
 }
-
 /* -------------------body------------------- */
 body{
     margin: 0;
@@ -37,7 +47,7 @@ hr.contact{
 }
 /* -------------------Header CSS------------------- */
 .bg-image{
-    background-image: url("img/bg.jpeg");
+    background-image: url("img/bg.jpg");
     filter: blur(7px);
     -webkit-filter: blur(7px);
     height: 100vh;
@@ -68,12 +78,13 @@ hr.contact{
 .text{
     margin-top: 1%;
     color: var(--header-text-color);
-    font-size: 35px;
+    font-size: 40px;
     line-height: 0%;
-    text-shadow: 2px 1px 8px #000000;
+    text-shadow: 2px 1px 18px var(--nav-bg);
+    /* text-shadow: 2px 1px 18px #000000; */
 }
 .text #hello{
-    font-size: 20px !important;
+    font-size: 23px !important;
     color: var(--header-text-color);
     line-height: 100%;
 }
@@ -151,6 +162,9 @@ hr.contact{
 .nav-link{
     color: var(--header-text-color) !important;
 }
+.navbar-brand:hover{
+    color: var(--link-hover);
+}
 /* -------------------Projects------------------- */
 .projects{
     padding-top: 75px;
@@ -173,7 +187,9 @@ hr.contact{
 *{
     box-sizing: border-box;
 }
-::selection{background-color: var(--select-color);}
+::selection{
+    background-color: var(--select-color);
+}
 .tabbed{
     width: 930px;
     margin: 0px auto;
@@ -191,9 +207,12 @@ hr.contact{
     cursor: pointer;
     transition: background-color .3s;
 }
-.tabbed > label:hover{background: var(--link-hover);}
+.tabbed > label:hover{
+    background: var(--link-hover);
+    color: var(--header-text-color);
+}
 .tabbed > input:checked + label {
-    color: var(--shape-text-color);
+    color: var(--header-text-color);
     background: var(--shape-color);
 }
 .tabs {
@@ -228,7 +247,7 @@ hr.contact{
     .tabbed > label{ display: none }
     .tabs > div
    {
-        width: 400px;
+        width: 360px;
         border: none;
         padding: 0;
         opacity: 1;
