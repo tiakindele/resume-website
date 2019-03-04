@@ -17,7 +17,8 @@
     --text-color: #282524;
     --header-text-color:white;
     --link-color: rgb(92, 128, 138);
-    --link-hover: rgb(127, 174, 187);
+    --link-hover: #F38A8A;
+    --link-hover2: rgb(127, 174, 187);
     --select-color: rgba(124, 150, 199, 0.363);
     --shape-color: rgb(92, 128, 138);
     --shape-text-color: #c9dad8;
@@ -26,6 +27,7 @@
 body{
     margin: 0;
     padding: 0;
+    height: 100%;
     font-family: sans-serif;
     overflow-x: hidden;
     font-size: 18px !important;
@@ -81,7 +83,6 @@ hr.contact{
     font-size: 40px;
     line-height: 0%;
     text-shadow: 2px 1px 18px var(--nav-bg);
-    /* text-shadow: 2px 1px 18px #000000; */
 }
 .text #hello{
     font-size: 23px !important;
@@ -100,7 +101,7 @@ hr.contact{
 }
 .scroll-bar span{
     /* border: 2px solid rgb(59, 59, 59); */
-    border: 2px solid var(--header-text-color);
+    border: 2px solid var(--link-hover);
     font-size: 10px;
     border-radius: 30px;
 }
@@ -162,14 +163,19 @@ hr.contact{
 .nav-link{
     color: var(--header-text-color) !important;
 }
+.nav-link:hover{
+    color: var(--contact-bg) !important;
+}
 .navbar-brand:hover{
-    color: var(--link-hover);
+    color: var(--contact-bg);
+}
+.active{
+    color:#F38A8A !important;
 }
 /* -------------------Projects------------------- */
 .projects{
     padding-top: 75px;
     min-height: 700px;
-    /* min-height: 100vh; */
     color: var(--text-color);
 }
 .projects h1{
@@ -208,7 +214,7 @@ hr.contact{
     transition: background-color .3s;
 }
 .tabbed > label:hover{
-    background: var(--link-hover);
+    background: var(--link-hover2);
     color: var(--header-text-color);
 }
 .tabbed > input:checked + label {
@@ -307,6 +313,7 @@ hr.contact{
 }
 .timeline li h5 span{
     font-weight: bold;
+    font-size: 18px;
     /* color: white; */
     color: var(--bg);
     /* margin-left: 0.5px; */

@@ -3,17 +3,16 @@
 <head>
     <title>Tolu Akindele</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<body>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
     <!-------------------Header Section------------------->
-    <section id="header">
+    <section id="home">
         <div class="bg-image"></div>
         <div class="container" id="pb">
             <div class="portrait-box">
@@ -34,9 +33,9 @@
     <!-------------------My Info Section------------------->
     <section id="user-info">
         <div class="nav-bar">
-            <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-lg" id="myScrollspy">
                 <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                <a class="navbar-brand" href="#">TOLUAKINDELE</a>
+                <a class="navbar-brand" href="#home">TOLUAKINDELE</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class = "fa fa-bars"></i>
                 <!-- <span class="navbar-toggler-icon"></span> -->
@@ -44,8 +43,8 @@
                 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                    <a class="nav-link" href="#">HOME</a>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#home">HOME</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="#about">ABOUT ME</a>
