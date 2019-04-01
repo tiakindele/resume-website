@@ -33,7 +33,7 @@ body{
     font-size: 18px !important;
     background-color: var(--bg) !important;
 }
-hr.pages{ 
+hr.pages{
     display: block;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
@@ -42,7 +42,7 @@ hr.pages{
     border-style: inset;
     border-width: 1px;
 }
-hr.contact{ 
+hr.contact{
     display: block;
     margin-top: 0.0em;
     margin-bottom: 0.0em;
@@ -245,15 +245,17 @@ hr.contact{
     opacity: 1;
     z-index: 1;
 }
-@media screen and (max-width: 1000px) {
-    .tabbed 
-   { 
-        width: 400px;
+
+/* maybe for tablets */
+@media screen and (min-width: 451px) (max-width: 1000px) {
+    .tabbed
+   {
+        width: 450px;
     }
     .tabbed > label{ display: none }
     .tabs > div
    {
-        width: 360px;
+        width: 410px;
         border: none;
         padding: 0;
         opacity: 1;
@@ -261,7 +263,7 @@ hr.contact{
         transform: none;
         margin-bottom: 60px;
     }
-    .tabs > div h3 
+    .tabs > div h3
    {
         border-bottom: 2px solid #000000;
         padding-bottom: .5em;
@@ -270,6 +272,31 @@ hr.contact{
 .tabdetails{
     text-align: left;
 }
+
+/* for small phone screens */
+@media screen and (max-width: 450px) {
+    .tabbed
+   {
+        width: 270px;
+    }
+    .tabbed > label{ display: none }
+    .tabs > div
+   {
+        width: 270px;
+        border: none;
+        padding: 0;
+        opacity: 1;
+        position: relative;
+        transform: none;
+        margin-bottom: 60px;
+    }
+    .tabs > div h3
+   {
+        border-bottom: 2px solid #000000;
+        padding-bottom: .5em;
+    }
+}
+
 
 /* -------------------Resume------------------- */
 .resume{
@@ -289,6 +316,12 @@ hr.contact{
     list-style-type: none;
     position: relative;
 }
+
+.timeline{
+    list-style-type: none;
+    position: relative;
+}
+
 .timeline:before{
     content: '';
     background: var(--shape-color);
@@ -309,7 +342,7 @@ hr.contact{
     padding: 5px 0 5px 12px;
     /* color: #fff; */
     color: var(--text-color);
-    font-size: 15px; 
+    font-size: 15px;
 }
 .timeline li h5 span{
     font-weight: bold;
@@ -336,6 +369,8 @@ hr.contact{
     z-index: 1;
 }
 
+
+
 /* -------------------Contact------------------- */
 .contact{
     padding-top: 0px;
@@ -344,7 +379,7 @@ hr.contact{
     text-align: center;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed; 
+    background-attachment: fixed;
     color: var(--text-color);
 }
 .contact .text-center{
