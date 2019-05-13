@@ -67,10 +67,10 @@
         <div class="about container" id="about">
             <h1>About Me</h1>
             <div class="row">
-                <div class="col-md-6 text-center">
+                <div class="col-lg-6 text-center">
                     <img src="img/me-big.jpg" class="profile-img">
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <!-- <h3>ABOUT ME</h3> -->
                     <p>
                         I am currently a student at the University of Alberta pursuing a degree in Computing Science with Specialization in Software Practice, and a minor in Business. <br><br> I became interested in  Computing Science because how influential it was in my native country, Nigeria. Experiencing its positive impacts first-hand, and getting a chance to pursue the passion in Canada, fueled my love for Computing Science. I love discussing IoT innovations and unanticipated consequences of new technologies. <br><br> In my spare time, I am a Music Producer and Sound Engineer. I enjoy producing music for the same reason I enjoy building websites and mobile applications - I love bringing ideas to life.
@@ -90,89 +90,152 @@
         <hr id="projects" class="pages">
         <div class="projects container">
             <h1>Projects</h1>
-            <div class="row">
-                <div class="col-md text-center">
-                    <div class="tabbed">
-                        <input type="radio" name="tabs" id="tab-nav-1" checked>
-                        <label for="tab-nav-1">Routine Keen</label>
-                        <input type="radio" name="tabs" id="tab-nav-2">
-                        <label for="tab-nav-2">Gas Station Record System</label>
-                        <input type="radio" name="tabs" id="tab-nav-3">
-                        <label for="tab-nav-3">This Website</label>
-                        <input type="radio" name="tabs" id="tab-nav-4">
-                        <label for="tab-nav-4">Others</label>
-                        <div class="tabs">
-                            <div>
-                                <h3>Routine Keen</h3>
-                                <p>Fitness App for Android Devices</p>
-                                <div class="tabdetails">
-                                    <b>Description</b>
-                                    <p>This app helps you keep track of physical activities you get involved in and is intended to help you make a habit out of it. <a href="https://github.com/CMPUT301F17T23/routineKeen/wiki/User-Stories" class="link">Click here for user stories.</a></p>
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Connectify (Social Networking and Blogging Platform)
+                        </button>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <b>Description</b>
+                            <p>Connectify is a social networking blog site. Signing up is easy and once approved by an admin, you can enjoy all the features of this web app. You can make blog posts, edit your posts, and decide what privacy setting you would like each post to have. 
+                            Connectify also allows you to make friends on the Connectify server and across other servers as well. With its responsive layout, you can get on connectify on any device you have. <a href="https://github.com/peterweckend/group-project-cmput404" class="link">Click here for more.</a></p>
+                            <div class="row">
+                                <div class="col-sm-6">
                                     <b>Languages and Softwares Used</b>
                                     <ul style="list-style-type:disc">
-                                        <li>Java</li>
-                                        <li>Android Studio</li>
+                                        <li>Django</li>
+                                        <li>Python</li>
+                                        <li>HTML</li>
+                                        <li>Materialize CSS</li>
+                                        <li>Heroku</li>
                                     </ul>
                                     <b>Main Lessons/Achievements</b>
                                     <ul style="list-style-type:disc">
-                                        <li>User login</li>
-                                        <li>Handling offline data</li>
-                                        <li>Database management of user data</li>
-                                        <li>Geolocation (google maps) monitoring</li>
+                                        <li>Using AJAX to update pages</li>
+                                        <li>Using UUIDs to maintain uniqueness of user IDs across servers</li>
                                     </ul>
                                 </div>
-                            </div>
-                            <div>
-                                <h3>Gas Station Record System</h3>
-                                <p>Transaction WebApp using Angular Forms</p>
-                                <div class="tabdetails">
-                                    <b>Description</b>
-                                    <p>Front end development of transaction interface for gas station employees.</p>
-                                    <b>Languages and Softwares Used</b>
-                                    <ul style="list-style-type:disc">
-                                        <li>VS Code</li>
-                                        <li>HTML & CSS</li>
-                                        <li>Angular JS</li>
-                                    </ul>
-                                    <b>Main Lessons/Achievements</b>
-                                    <ul style="list-style-type:disc">
-                                        <li>Data validation of user input</li>
-                                        <li>Capturing sales transactions and daily sales data</li>
-                                    </ul>
+                                <div class="col-sm-6">
+                                    <video width="400" controls>
+                                        <source src="vid/connectify.mp4" type="video/mp4">
+                                        Your browser does not support HTML5 video.
+                                    </video>
                                 </div>
                             </div>
-                            <div>
-                                <h3>This Website</h3>
-                                <p>My Personal Self-made Website</p>
-                                <div class="tabdetails">
-                                    <b>Description</b>
-                                    <p>My personal website was created to showcase my projects and experience. This website was a personal endeavour and the skills used were self-taught.</p>
-                                    <b>Languages and Softwares Used</b>
-                                    <ul style="list-style-type:disc">
-                                        <li>VS Code</li>
-                                        <li>HTML & CSS</li>
-                                    </ul>
-                                    <b>Main Lessons/Achievements</b>
-                                    <ul style="list-style-type:disc">
-                                        <li>Publishing a website</li>
-                                        <li>Taking concept from idea to reality</li>
-                                    </ul>
-                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Routine Keen (Android App)
+                        </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p>Fitness App for Android Devices</p>
+                            <div class="tabdetails">
+                                <b>Description</b>
+                                <p>This app helps you keep track of physical activities you get involved in and is intended to help you make a habit out of it. <a href="https://github.com/CMPUT301F17T23/routineKeen/wiki/User-Stories" class="link">Click here for user stories.</a></p>
+                                <b>Languages and Softwares Used</b>
+                                <ul style="list-style-type:disc">
+                                    <li>Java</li>
+                                    <li>Android Studio</li>
+                                </ul>
+                                <b>Main Lessons/Achievements</b>
+                                <ul style="list-style-type:disc">
+                                    <li>User login</li>
+                                    <li>Handling offline data</li>
+                                    <li>Database management of user data</li>
+                                    <li>Geolocation (google maps) monitoring</li>
+                                </ul>
                             </div>
-                            <div>
-                                <h3>Others</h3>
-                                <div class="tabdetails">
-                                    <ul style="list-style-type:disc">
-                                        <br>
-                                        <li><a href="https://github.com/tiakindele?tab=repositories" class="link">Click here</a> to see other projects available on my GitHub account. <br><br></li>
-                                        <li>I love using <b>GitHub</b> to keep all my code up to date.<br><br></li>
-                                        <li>When working on projects with a team, <b>Slack</b> and <b>Trello</b> are my go-tos.<br><br></li>
-                                        <li>I have worked on projects using <b>C</b>, <b>Python</b>, <b>Java</b>, <b>SQL</b>, <b>HTML</b> and <b>CSS</b>.<br><br></li>
-                                        <li>My favourite code editors in no particular order are <b>VS Code</b>, <b>Sublime Text</b>, and <b>PyCharm</b>.<br><br></li>
-                                        <li>My main OS at the moment is the <b>Mac OS</b>, but I do a lot of work on <b>Windows</b> and <b>Linux</b> also.</li>
-                                    </ul>
-                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Gas Station Record System
+                        </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p>Transaction WebApp using Angular Forms</p>
+                            <div class="tabdetails">
+                                <b>Description</b>
+                                <p>Front end development of transaction interface for gas station employees.</p>
+                                <b>Languages and Softwares Used</b>
+                                <ul style="list-style-type:disc">
+                                    <li>VS Code</li>
+                                    <li>HTML & CSS</li>
+                                    <li>Angular JS</li>
+                                </ul>
+                                <b>Main Lessons/Achievements</b>
+                                <ul style="list-style-type:disc">
+                                    <li>Data validation of user input</li>
+                                    <li>Capturing sales transactions and daily sales data</li>
+                                </ul>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            This Website
+                        </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p>My Personal Self-made Website</p>
+                            <div class="tabdetails">
+                                <b>Description</b>
+                                <p>My personal website was created to showcase my projects and experience. This website was a personal endeavour and the skills used were self-taught.</p>
+                                <b>Languages and Softwares Used</b>
+                                <ul style="list-style-type:disc">
+                                    <li>VS Code</li>
+                                    <li>HTML & CSS</li>
+                                </ul>
+                                <b>Main Lessons/Achievements</b>
+                                <ul style="list-style-type:disc">
+                                    <li>Publishing a website</li>
+                                    <li>Taking concept from idea to reality</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFive">
+                        <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Others
+                        </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <ul style="list-style-type:disc">
+                                <br>
+                                <li><a href="https://github.com/tiakindele?tab=repositories" class="link">Click here</a> to see other projects available on my GitHub account. <br><br></li>
+                                <li>I love using <b>GitHub</b> to keep all my code up to date.<br><br></li>
+                                <li>When working on projects with a team, <b>Slack</b> and <b>Trello</b> are my go-tos.<br><br></li>
+                                <li>I have worked on projects using <b>C</b>, <b>Python</b>, <b>Java</b>, <b>SQL</b>, <b>HTML</b> and <b>CSS</b>.<br><br></li>
+                                <li>My favourite code editors in no particular order are <b>VS Code</b>, <b>Sublime Text</b>, and <b>PyCharm</b>.<br><br></li>
+                                <li>My main OS at the moment is the <b>Mac OS</b>, but I do a lot of work on <b>Windows</b> and <b>Linux</b> also.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -243,43 +306,38 @@
         <!-------------------Contact------------------->
         <hr id="contact" class="contact">
         <div class="contact">
-            <div class="container text-center">
-                <h1>Contact</h1>
-                <p class="text-center">Feel free to reach out to me at anytime.</p>
-            </div>
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-5">
-                    <div class ="row">
-                        <div class="col-md-4 col-lg-3"></div>
-                        <div class="col-md-4 col-lg-6">
-                            <i class="fa fa-envelope"></i>
-                            <p class="text-center">toluwani@ualberta.ca</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1>Contact</h1>
+                        <p class="text-center">Feel free to reach out to me at anytime.</p>
+                        <div class="row justify-content-center">
+                            <div class="col-sm-6 col-md-4">
+                                <i class="fa fa-envelope"></i>
+                                <p class="text-center">toluwani@ualberta.ca</p>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <h4>Around the Web</h4>
+                                <div class ="row">
+                                    <div class="col-md-3"></div>
+                                    <div class="col-md-2">
+                                        <a href="https://github.com/tiakindele" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <a href="https://www.linkedin.com/in/tolu-akindele-966649171/" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <a href="pdf/TA Official Resume.pdf" class="btn-social btn-outline"><i class="fa fa-fw fa-file-pdf-o"></i></a>
+                                    </div>
+                                    <div class="col-md-3"></div>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-4 col-lg-4"></div>
                     </div>
                 </div>
-                <div class="col-md-5">
-                    <h4>Around the Web</h4>
-                    <div class ="row">
-                        <div class="col-md-3"></div>
-                        <div class="col-md-2">
-                            <a href="https://github.com/tiakindele" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
-                        </div>
-                        <div class="col-md-2">
-                            <a href="https://www.linkedin.com/in/tolu-akindele-966649171/" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                        </div>
-                        <div class="col-md-2">
-                            <a href="pdf/TA Official Resume.pdf" class="btn-social btn-outline"><i class="fa fa-fw fa-file-pdf-o"></i></a>
-                        </div>
-                        <div class="col-md-3"></div>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-1"></div>
             </div>
         </div>
-
         <div class="footer text-center">
             <p>Copyright &copy; Tolu Akindele 2019</p>
         </div>

@@ -1,0 +1,6 @@
+websites:
+    http://www.pascalvangemert.nl/#/profile
+
+stylings:
+    hr: https://css-tricks.com/examples/hrs/
+    scroller: https://codepen.io/nxworld/pen/OyRrGy

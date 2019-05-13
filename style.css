@@ -1,18 +1,7 @@
-/* :root{
-    --bg: rgb(255, 255, 255);
-    --nav-bg: rgb(92, 128, 138);
-    --contact-bg: #d3d2a2;
-    --text-color: #282524;
-    --header-text-color:white;
-    --link-color: rgb(92, 128, 138);
-    --link-hover: rgb(127, 174, 187);
-    --select-color: rgba(124, 150, 199, 0.363);
-    --shape-color: #92a76bda;
-    --shape-text-color: #c9dad8;
-} */
 :root{
     --bg: rgb(255, 255, 255);
-    --nav-bg: rgb(92, 128, 138);
+    /* --nav-bg: rgb(92, 128, 138); */
+    --nav-bg: rgb(68, 87, 92);
     --contact-bg: rgb(210, 225, 230);
     --text-color: #282524;
     --header-text-color:white;
@@ -50,8 +39,8 @@ hr.contact{
 /* -------------------Header CSS------------------- */
 .bg-image{
     background-image: url("img/bg.jpg");
-    filter: blur(7px);
-    -webkit-filter: blur(7px);
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
     height: 100vh;
     text-align: center;
     background-position: center;
@@ -125,6 +114,7 @@ hr.contact{
 .profile-img{
     margin-top: 1vh;
     height: 400px;
+    margin-bottom: 20px;
 }
 .col-md-6 .profile-img{
     max-width: 1000px;
@@ -140,6 +130,7 @@ hr.contact{
 .nav-bar{
     top: 0;
     position: sticky;
+    position: -webkit-sticky;
     z-index: 2;
 }
 .navbar{
@@ -176,7 +167,7 @@ hr.contact{
 .projects{
     padding-top: 75px;
     min-height: 700px;
-    color: var(--text-color);
+    color: var(--nav-bg);
 }
 .projects h1{
     padding-bottom: 15px;
@@ -188,89 +179,32 @@ hr.contact{
 .projects .link:hover{
     color: var(--link-hover);
 }
-/* https://codepen.io/YozhEzhi/pen/gcLpI/ */
-@import "compass/css3";
-*{
-    box-sizing: border-box;
+.projects #v-pills-tab{
+    background-color: rgb(68, 87, 92);
 }
-::selection{
-    background-color: var(--select-color);
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    /* color: var(--header-text-color) !important; */
+    background-color: rgba(0, 0, 0, 0.021) !important;
 }
-.tabbed{
-    width: 930px;
-    margin: 0px auto;
-    position: relative;
+.tab-pane {
+    color: black !important;
 }
-.tabbed h3{
-    padding-bottom: 0px;
+.projects .card-header .btn-link {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--nav-bg) !important;
 }
-.tabbed > input{display: none;}
-.tabbed > label {
-    display: block;
-    float: left;
-    padding: 12px 20px;
-    margin-right: 5px;
-    cursor: pointer;
-    transition: background-color .3s;
+.projects .card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    color: inherit;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    text-align: center;
 }
-.tabbed > label:hover{
-    background: var(--link-hover2);
-    color: var(--header-text-color);
+.projects .video {
+    height: 10%;
 }
-.tabbed > input:checked + label {
-    color: var(--header-text-color);
-    background: var(--shape-color);
-}
-.tabs {
-    clear: both;
-    perspective: 600px;
-}
-.tabs > div {
-    width: 930px;
-    position: fixed;
-    border: 2px solid var(--shape-color);
-    padding: 10px 30px 40px;
-    line-height: 1.4em;
-    opacity: 0;
-    transform: rotateX(-20deg);
-    transform-origin: top center;
-    transition: opacity .3s, transform 1s;
-    z-index: 0;
-}
-#tab-nav-1:checked ~ .tabs > div:nth-of-type(1),
-#tab-nav-2:checked ~ .tabs > div:nth-of-type(2),
-#tab-nav-3:checked ~ .tabs > div:nth-of-type(3),
-#tab-nav-4:checked ~ .tabs > div:nth-of-type(4){
-    transform: rotateX(0);
-    opacity: 1;
-    z-index: 1;
-}
-@media screen and (max-width: 1000px) {
-    .tabbed 
-   { 
-        width: 400px;
-    }
-    .tabbed > label{ display: none }
-    .tabs > div
-   {
-        width: 360px;
-        border: none;
-        padding: 0;
-        opacity: 1;
-        position: relative;
-        transform: none;
-        margin-bottom: 60px;
-    }
-    .tabs > div h3 
-   {
-        border-bottom: 2px solid #000000;
-        padding-bottom: .5em;
-    }
-}
-.tabdetails{
-    text-align: left;
-}
-
 /* -------------------Resume------------------- */
 .resume{
     padding-top: 75px;
@@ -353,12 +287,13 @@ hr.contact{
 .contact .row{
     font-size: 20px;
 }
-.contact .col-md-5 .fa{
+.contact .col-md-4 .fa{
     padding: 10px;
     font-size: 40px;
 }
 .contact .btn-social{
     color: var(--link-color);
+    font-size: 30px;
 }
 .contact .btn-social:hover{
     color: var(--link-hover);
@@ -370,4 +305,10 @@ hr.contact{
     height: 60px;
     color: var(--header-text-color);
     padding: 10px;
+}
+video {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
 }
